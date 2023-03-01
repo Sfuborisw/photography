@@ -2,9 +2,36 @@
 <html>
 <head>
     <title>My Photography</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js"></script>
 </head>
+
+<style>
+    body {
+        background-color: azure;
+    }
+
+    hr {
+        width: 60%;
+    }
+</style>
+
 <body>
     <h1>Welcome to my website!</h1>
     <p>This is a sample home page.</p>
+    <hr/>
+    123
+    <div x-data="{ message: 'Hello, World!' }">
+        <p x-text="message"></p>
+    </div>
+    <hr/>
+    234
+    <div x-data="{ show: false }">
+        <p x-show="show">Hello, World!</p>
+        <button @click="show = !show">Toggle</button>
+    </div>
+    <hr/>
+    345
+    <hr/>
+    456
 </body>
 </html>
